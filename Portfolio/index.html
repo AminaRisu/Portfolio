@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Combatiable" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <a href="#" class="logo">
+            <img src="images/coffee logo.png" alt="">
+        </a>
+
+        <!-- Menu icon-->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#tocontact">To Contact</a></li>
+        </ul>
+
+    </header>
+
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>HELLO<br> I'M AMINA</h1>
+            <p>FULL STACK WEB DEVELOPER</p>
+            <button id="downloadResumeButton" class='glowing-btn'><span class='glowing-txt'>R<span class='faulty-letter'>E</span>SUME</span>
+            </button>
+        </div>
+    </section>
+    <!--About Me-->
+    <section class="about" id="about">
+        <div class="header">
+            <h1>01</h1>
+            <h2>ABOUT ME</h2>
+        </div>
+        <div class="content">
+            <div class="illustration">
+                <img src="images/full stack bg.png" alt="Developer Illustration">
+            </div>
+            <div class="text">
+                <p>I'm a full stack developer with a passion for creating dynamic and responsive web applications. I'm constantly looking for ways to integrate ML algorithms into my projects and improve the user experience with my skills and experience.</p>
+            </div>
+        </div>
+    </section>
+    <!--Skills-->
+
+     <div class="container" id="skills">
+        <!-- Left Section with Title and Subtitle -->
+        <div class="left-section">
+            <div class="number">02</div>
+            <div class="text">SKILLS</div>
+        </div>
+
+        <!-- Right Section with Image Grid -->
+        <div class="right-section">
+            <div class="image">
+                <img src="images/html.png" alt="">
+                <p>HTML</p>
+            </div>
+            <div class="image">
+                <img src="images/css.png" alt="">
+                <p>CSS</p>
+            </div>
+            <div class="image">
+                <img src="images/bootestrap.png" alt="">
+                <p>BOOTSTRAP</p>
+            </div>
+            <div class="image">
+                <img src="images/js.png" alt="">
+                <p>JS</p>
+            </div>
+            <div class="image">
+                <img src="images/php.png" alt="">
+                <p>PHP</p>
+            </div>
+            <div class="image">
+                <img src="images/python.png" alt="">
+                <p>PYTHON</p>
+            </div>
+            <div class="image">
+                <img src="images/sql.png" alt="">
+                <p>SQL</p>
+            </div>
+            <div class="image">
+                <img src="images/flutter.png" alt="">
+                <p>FLUTTER</p>
+            </div>
+            <div class="image">
+                <img src="images/react.png" alt="">
+                <p>REACT</p>
+            </div>
+        </div>
+    </div>
+    <!--Customers-->
+
+    <div class="contact-section" id="tocontact">
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i>
+                <style>
+                    /* Change the color of all Boxicons */
+                    .bx {
+                        color: #E1306C; /* Instagram brand color */
+                        font-size: 100px; /* Optional: Change size if needed */
+                    }
+            
+                    /* Optionally, add a hover effect */
+                    .bx:hover {
+                        color: #C13584; /* Darker shade for hover effect */
+                    }
+                </style>
+            </a>
+            <a href="https://www.linkedin.com/in/amina-s-19a063303/" target="_blank"><i class='bx bxl-linkedin'></i>
+                <style>
+                    /* Change the color of all Boxicons */
+                    .bx {
+                        color: #508dbd; /* Instagram brand color */
+                        font-size: 100px; /* Optional: Change size if needed */
+                    }
+            
+                    /* Optionally, add a hover effect */
+                    .bx:hover {
+                        color: #C13584; /* Darker shade for hover effect */
+                    }
+                </style></a>
+            <a href="https://github.com/AminaRisu" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+        <div class="contact-text">
+            <h1>03</h1>
+            <p>CONTACT ME</p>
+        </div>
+    </div>
+
+    <!--Copyright-->
+    <div class="copyright">
+        <p>&#169; Portfolio All Right Reserved</p>
+    </div>
+
+  <script>
+    // JavaScript to handle the button click
+    document.getElementById('downloadResumeButton').addEventListener('click', function() {
+      // Create a temporary anchor element
+      const a = document.createElement('a');
+      a.href = 'My Resume.pdf'; // Replace with the actual file path
+      a.download = 'resume.pdf';          // Set download filename
+      a.style.display = 'none';           // Hide the element
+      document.body.appendChild(a);       // Append to the body
+      a.click();                          // Trigger download
+      document.body.removeChild(a);       // Remove after click
+    });
+  </script>
+    
+    
+</body>
+</html>
